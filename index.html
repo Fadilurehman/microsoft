@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAaVBMVEXyUCIApO9/ugD/uQD////xQQD83de/25d5twCozm76xr243vkAn+4Qp+//tQDV6/vi7tL/5bj/25f/zm7/xEvxMgC82ZFwswCizGP+8vDt9OLv9/7/8dn/7cwAme3/y2X/36T/wkH/1Yby/cM8AAABMUlEQVR4nO3PSQ6CQBRAwVbBWZzFWfH+h3Qnujc/aVLvAi+VUlTlsPg0GveDmoT5AAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/wkso9p/AQ/1OKb6mKZhnVrgeRXVORUdDzD3AHMPMPcAc6/7wFlYl/Z6XUd1S/Oo7ssWuKmieqReVPMf4CCoLSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBgB4HVNi2i+gY+m11MzesNECim7uqRJqUAAAAASUVORK5CYII="
+        type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="home.css" rel="text/css">
+    <link rel="stylesheet" href="utils.css" rel="text/css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="flex">
+            <img src="data:image/png;base64,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"
+                class="img">
+            <li><a href="#">Microsoft 365</a></li>
+            <li><a href="#">Office</a></li>
+            <li><a href="#">Windows</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Supports</a></li>
+        </div>
+        <div class="flex2">
+            <li>All Microsoft▼</li>
+            <li>🔎</li>
+            <li>🛒</li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHrjuc7lqH90tf3tKGFbY0dnUZQL_6CKKv2g&usqp=CAU"
+                class="icon">
+        </div>
+    </nav>
+    <div class="section">
+        <div class="flex3">
+            <li>New</li>
+            <br>
+            <li
+                style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700;font-size: larger;">
+                Surface pro 9</li>
+            <br>
+            <p>keep spirits with a game-changing combo of laptop power and tablet flexibility---all in one
+                ultra-portable device</p>
+        </div>
+        <div class="flex4">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-All-Colors-FY23HOL:VP2-859x540"
+                class="img">
+        </div>
+    </div>
+    <section class="sect-2">
+        <div class="card1">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Windows-Logo-80x80?wid=40&hei=40"
+                class="sect-2_img">
+            <p>choose your Microsoft 365</p>
+        </div>
+        <div class="card1">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Tablet-Kickstand-Landscape-Mode-Fluent-80x80?wid=40&hei=40"
+                class="sect-2_img">
+            <p>Explore surface device</p>
+        </div>
+        <div class="card1">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Xbox-Logo-80x80?wid=40&hei=40"
+                class="sect-2_img">
+            <p>Buy Xbox games</p>
+        </div>
+        <div class="card1">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-LL-Windows-Logo-80x80?wid=40&hei=40"
+                class="sect-2_img">
+            <p>Get Windows 11</p>
+        </div>
+    </section>
+
+    <div class="sect-3">
+        <div class="card" style="width:18rem;">
+            <img class="card-img"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-5-Platinum-Alcantara-FY23HOL?wid=515&hei=293&fit=crop"
+                alt="Card image cap">
+            <div class="card-body">
+                <h3 class="card-title">Surface Laptop 5</h3>
+                <p class="card-text">Sophisticated style and multitasking speed powered by 12th Gen Intel® Core™
+                    i5/i7 processors built on the Intel® Evo™ platform make this the perfect gift</p>
+                <div class="card-link"><a href="">Learn More ></a></div>
+            </div>
+        </div>
+        <div class="card" style="width:18rem;">
+            <img class="card-img"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Xbox-Series-X-FY23HOL?wid=297&hei=167&fit=crop"
+                alt="Card image cap">
+            <div class="card-body">
+                <h3 class="card-title">Xbox Series X</h3>
+                <p class="card-text">Give thrills that’ll last all year with the fastest, most powerful Xbox ever.
+                </p>
+                <div class="card-link"><a href="">Shop Xbox Series X ></a></div>
+            </div>
+        </div>
+        <div class="card" style="width:18rem;">
+            <img class="card-img"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-FY23HOL?wid=297&hei=167&fit=crop"
+                alt="Card image cap">
+            <div class="card-body">
+                <h3 class="card-title">Microsoft 365</h3>
+                <p class="card-text">Apps and features to help you turn ideas into reality, stay safer and focus on
+                    the important things in life.</p>
+                <div class="card-link"><a href="">For one person > <br> for up to 6 person ></a></div>
+            </div>
+        </div>
+        <div class="card" style="width:18rem;">
+            <img class="card-img"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=297&hei=167&fit=crop"
+                alt="Card image cap">
+            <div class="card-body">
+                <h3 class="card-title">Designed for life today – and tomorrow</h3>
+                <p class="card-text">The next-generation of games. Your goals. Friends and family. Windows 11 was
+                    made to bring you closer to everything you love.</p>
+                <div class="card-link"><a href="">See if your PC is ready ></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sect-4">
+        <img class="sect-4_img"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-hero-Edge:VP1-539x440">
+        <div class="sect-4_writing">
+            <h4 class="sect-4_title">Microsoft Edge</h4>
+            <p class="sect-4_text">World-class performance with more privacy, more productivity and more value while
+                you browse</p>
+            <button type="button"> Download Now </button>
+        </div>
+    </div>
+    <div class="sect-5">
+        <h4>For Bussiness</h4>
+    </div>
+
+
+    <div class="sect-6">
+        <div class="card1" style="width:18rem;">
+            <img class="card-img1"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Family-2022-M2-1?wid=515&hei=293&fit=crop"
+                alt="Card image cap">
+            <div class="card-body1">
+                <h3 class="card-title1">Surface for Business Family</h3>
+                <p class="card-text1">Surface for Business devices enable work on your team's terms with
+                    flexibility, built-in security and the power they need to succeed.</p>
+                <div class="card-link1"><a href="">Learn More ></a></div>
+            </div>
+        </div>
+        <div class="card1" style="width:18rem;">
+            <img class="card-img1"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Microsoft-Teams-Commercial?wid=515&hei=293&fit=crop"
+                alt="Card image cap">
+            <div class="card-body1">
+                <h3 class="card-title1">Get Microsoft Team For Free</h3>
+                <p class="card-text1">Online meetings, chat and shared cloud storage – all in one place.</p>
+                <div class="card-link1"><a href="">Sign up For Free ></a></div>
+            </div>
+        </div>
+        <div class="card1" style="width:18rem;">
+            <img class="card-img1"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/JIC-DPS-CP01?wid=297&hei=167&fit=crop"
+                alt="Card image cap">
+            <div class="card-body1">
+                <h3 class="card-title1">Welcome to your Windows 365 Cloud PC</h3>
+                <p class="card-text1">Securely stream your Windows experience from the Microsoft cloud to any
+                    device.</p>
+                <div class="card-link1"><a href="">Get it Today ></a></div>
+            </div>
+        </div>
+        <div class="card1" style="width:18rem;">
+            <img class="card-img1"
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Brand-Hybrid-Work?wid=297&hei=167&fit=crop"
+                alt="Card image cap">
+            <div class="card-body1">
+                <h3 class="card-title1">Thrive in a hybrid world</h3>
+                <p class="card-text1">Discover tools, resources and strategies to help your employees succeed in the
+                    new world of flexible work.</p>
+                <div class="card-link1"><a href="">Learn More ></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="sect-7">
+        <p>Follow Microsoft</p>
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+        </svg>
+    </div>
+
+
+    <div class="main-footer">
+        <div class="footer-main">
+            <div class="footer1">
+                <ul class="footer-content1">
+                    <h5 class="heading">What's New</h5>
+                    <li>Microsoft 365</li>
+                    <li>Surface Pro X</li>
+                    <li>Surface Pro 7</li>
+                    <li>Surface Laptop 3</li>
+                    <li>Windows 11 apps</li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <ul class="footer-content1">
+                    <h5 class="heading">Microsoft Store</h5>
+                    <li>Account profile</li>
+                    <li>Download Center</li>
+                    <li>Microsoft Store Support</li>
+                    <li>Returns</li>
+                    <li>Order tracking</li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <ul class="footer-content1">
+                    <h5 class="heading">Education</h5>
+                    <li>Microsoft in education</li>
+                    <li>Devices for education</li>
+                    <li>Microsoft Teams for Education</li>
+                    <li>Microsoft 365 Education</li>
+                    <li>Office Education</li>
+                    <li>Educator training and development</li>
+                    <li>Deals for students and parents</li>
+                    <li>Azure for students</li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <ul class="footer-content1">
+                    <h5 class="heading">Business</h5>
+                    <li>Microsoft Cloud</li>
+                    <li>Microsoft Security</li>
+                    <li>Azure</li>
+                    <li>Dynamics 365</li>
+                    <li>Microsoft 365</li>
+                    <li>Microsoft Advertising</li>
+                    <li>Microsoft Industry</li>
+                    <li>Microsoft Teams</li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <ul class="footer-content1">
+                    <h5 class="heading">Developer & IT</h5>
+                    <li>Developer Center</li>
+                    <li>Documentation</li>
+                    <li>Microsoft Learn</li>
+                    <li>Microsoft Tech Community</li>
+                    <li>Azure Marketplace</li>
+                    <li>AppSource</li>
+                    <li>Microsoft Power Platform</li>
+                    <li>Visual Studio</li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <ul class="footer-content1">
+                    <h5 class="heading">Company</h5>
+                    <li>Careers</li>
+                    <li>About Microsoft</li>
+                    <li>Company news</li>
+                    <li>Privacy at Microsoft</li>
+                    <li>Investors</li>
+                    <li>Security</li>
+                    <li>Sustainability</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-footer2">
+        <div class="footer2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z" />
+            </svg>
+            <p>English(India)</p>
+        </div>
+        <div class="footer2">
+                <li>Contact Microsoft</li>
+                <li> Privacy</li>
+                <li> Terms of use</li>
+                <li> Trademarks</li>
+                <li> About our ads</li>
+                <li> © Microsoft 2022</li>
+        </div>
+    </div>
+</body>
+
+</html>
